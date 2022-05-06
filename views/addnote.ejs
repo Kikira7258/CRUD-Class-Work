@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="/styles/styles.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+<!-- <div class="add-form-container">
+
+    <form>
+
+        <div>
+            <input type="text" placeholder="Project Title">
+        </div>
+
+
+        <textarea placeholder="Description"></textarea> <br>
+        <a href="" class="form-btn"><button type="submit" value="post">ADD</button></a>
+    </form>
+    
+</div> -->
+
+
+
+
+
+
+
+<div class="add-form-container">
+    <form action="/save" method="post">
+        <div class="form-group">
+            <label for="title">Project Title</label>
+            <input type="text" required name="title">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" required name="description">
+        </div>
+        <div class="form-group">
+            <label for="start-date">Start Date</label>
+            <input type="date" name="start-date">
+        </div>
+        <div class="form-group">
+            <label for="due-date">Due Date</label>
+            <input type="date" name="due-date">
+        </div>
+        <button type="submit" class="form-btn">Sumbit</button>
+    </form>
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+    
+
+
+
+    <!-- <nav class="mx-20 mt-6">
+        
+        <div class="add-button-container">
+            <a href="add" class="add-button">Add Note</a>
+        </div>
+
+
+        <div>
+            <ul class="main-layout">
+                <li>Title</li>
+                <li>Description</li>
+                <li>Start Date</li>
+                <li>Due Date</li>
+    
+                <li>Action</li>
+            </ul>
+            
+            <ul class="flex justify-between p-4 bg-[#e8ffff] rounded-md db-data">
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+    
+                <li class="flex">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                </li>
+            </ul>
+        </div>
+
+    </nav> -->
+
+
+
+    
+
+
+
+    <div class="container">
+        <!-- <h2>ADD NOTES</h2> -->
+        <dutton class="">Add Note</dutton>
+
+        <table class="">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% project.forEach(function(projects){ %>
+                <tr>
+                    <td><%= project.project_title %></td>
+                    <td><%= project.project_description %></td>
+                    <td><%= project.project_start_dt %></td>
+                    <td><%= project.project_due_dt %></td>
+                    <td>
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            })
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+        
+   
+    
+</body>
+</html>
