@@ -53,14 +53,14 @@
     
 
 
-
     <div class="container">
-        <!-- <h2>ADD NOTES</h2> -->
-        <dutton class="">Add Note</dutton>
 
-        <table class="">
+        <a href="/add-project">Add Project</a>
+
+        <table class="w-[600px] bg-slate-500">
             <thead>
                 <tr>
+                    <th></th>
                     <th>Title</th>
                     <th>Description</th>
                     <th>Start Date</th>
@@ -69,27 +69,33 @@
             </thead>
 
             <tbody>
-                <% project.forEach(function(projects){ %>
+                <% if(data.length) {
+                    for(var i = 0; i< data.length; i++) { %>
+                
                 <tr>
-                    <td><%= project.project_title %></td>
-                    <td><%= project.project_description %></td>
-                    <td><%= project.project_start_dt %></td>
-                    <td><%= project.project_due_dt %></td>
+                    <td><%= data[i].id %></td>
+                    <td><%= data[i].project_title %></td>
+                    <td><%= data[i].project_description %></td>
+                    <td><%= data[i].project_start_dt %></td>
+                    <td><%= data[i].project_due_dt %></td>
                     <td>
-                        <button><i class="fa-solid fa-trash-can"></i></button>
-                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        <a href=""><button><i class="fa-solid fa-pencil"></i></button></a>
+                        <a href=""><button><i class="fa-solid fa-trash-can"></i></button></a>    
                     </td>
                 </tr>
-            })
+
+                    <% }
+                }else{ %>
+                <tr>
+                    <td>No Records</td>
+                </tr>
+            <% } %>             
             </tbody>
 
         </table>
     </div>
 
 
-
         
-   
-    
 </body>
 </html>
