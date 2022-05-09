@@ -14,45 +14,6 @@
 <body>
     
 
-
-
-    <!-- <nav class="mx-20 mt-6">
-        
-        <div class="add-button-container">
-            <a href="add" class="add-button">Add Note</a>
-        </div>
-
-
-        <div>
-            <ul class="main-layout">
-                <li>Title</li>
-                <li>Description</li>
-                <li>Start Date</li>
-                <li>Due Date</li>
-    
-                <li>Action</li>
-            </ul>
-            
-            <ul class="flex justify-between p-4 bg-[#e8ffff] rounded-md db-data">
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-    
-                <li class="flex">
-                    <button><i class="fa-solid fa-trash-can"></i></button>
-                    <button><i class="fa-solid fa-trash-can"></i></button>
-                </li>
-            </ul>
-        </div>
-
-    </nav> -->
-
-
-
-    
-
-
     <div class="container">
 
         <a href="/add-project">Add Project</a>
@@ -79,8 +40,11 @@
                     <td><%= data[i].project_start_dt %></td>
                     <td><%= data[i].project_due_dt %></td>
                     <td>
-                        <a href=""><button><i class="fa-solid fa-pencil"></i></button></a>
-                        <a href=""><button><i class="fa-solid fa-trash-can"></i></button></a>    
+                        <a href="/projects/edit/<%= data[i].id %>"><button><i class="fa-solid fa-pencil"></i></button></a>
+
+                        <a href="/project_details/<%= data[i].id %>"><button><i class="fa-solid fa-book"></i></button></a>  
+                          
+                        <a href="/projects/delete/<%= data[i].id %>"><button><i class="fa-solid fa-trash-can"></i></button></a>    
                     </td>
                 </tr>
 

@@ -468,127 +468,49 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.h-\[85vh\] {
-  height: 85vh;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.resize-none {
-  resize: none;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-r-2 {
-  border-right-width: 2px;
-}
-
-.bg-\[\#e8ffff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 255 255 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-
-/* ------------------ */
-/* ------------------ */
-
-.add-button {
-  background: rgb(9, 9, 77);
-  border-radius: 5px;
-  color: #fff;
-  padding: 5px 2px;
-  margin-bottom: 2rem;
-}
-
-.db-data {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.main-layout {
-  /* background: rgb(33, 3, 13); */
-  background: rgb(9, 9, 77);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-}
-
-
-
-.add-form-container {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-}
-
-
-.add-form-container form input, .add-form-container form textarea {
+.container {
   width: 100%;
-  margin-bottom: 1rem;
-  outline: 2px solid gray;
-  border-radius: 5px;
-  padding: 5px;
 }
 
-
-.form-btn {
-  background: rgb(134, 134, 250);
-  padding: 2px 5px;
-  border-radius: 5px;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.table {
+  display: table;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}

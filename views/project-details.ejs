@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+
+
+    
+
+<div class="container">
+    <div>
+        <h1><%= project_title %></h1>
+        <p><%= project_description %></p>
+        <p><%= project_start_dt %></p>
+        <p><%= project_due_dt %></p>
+    </div>
+
+
+    <!-- linking the note route dynamically to the project -->
+    <a href="/add-note/<%= project_id %>">Add Note</a>
+
+    <table class="w-[600px]">
+        <thead>
+            <tr>
+                <th>Note</th>
+                <th>Active Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% if(data.length) {
+                for(var i = 0; i< data.length; i++) { %>
+            
+            <tr>
+                <td><%= data[i].note %></td>
+                <td><%= data[i].active_date %></td>
+                <td><a href="/note/delete/<%= data[i].id %>/<%= project_id %>"><button><i class="fa-solid fa-trash-can"></i></button></a></td> 
+            </tr>
+
+                <% }
+            }else{ %>
+            <tr>
+                <td>No Records</td>
+            </tr>
+        <% } %>             
+        </tbody>
+
+    </table>
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

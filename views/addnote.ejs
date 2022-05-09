@@ -14,19 +14,16 @@
 <body>
 
     <div class="add-form-container">
-        <form method="post">
+        <form method="post" action="<%= !note_id ? '/add-note/' + project_id : '/project_details/' + note_id %>">
 
-            <div class="form-group">
-                <label for="dproject_id">Project ID</label>
-                <input type="text" required name="project_id" value="<%= project_id %>">
-            </div>
+
             <div class="form-group">
                 <label for="note">Note</label>
                 <input type="text" required name="note" value="<%= note %>">
             </div>
             <div class="form-group">
-                <label for="due-date">Active date</label>
-                <input type="date" required name="due-date" value="<%= active_date %>">
+                <label for="active_date">Active date</label>
+                <input type="date" required name="active_date" value="<%= active_date %>">
             </div>
 
             

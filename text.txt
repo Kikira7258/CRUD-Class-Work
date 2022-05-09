@@ -1,0 +1,11 @@
+Action= "" decide where to send the data once its been submitted
+
+ternary: (condition) ? true : false
+
+
+If you put and object after you put a path, then you are pass data to the template, this only works for the render function
+
+
+name of then route, then name of the files (when making a route)
+
+we only get access to the row when are making a query
